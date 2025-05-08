@@ -2,7 +2,17 @@ This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-
 
 ## Getting Started
 
-First, run the development server:
+Copy the example environment file:
+
+```bash
+cp .env.example .env
+```
+
+Configure your environment variables in `.env`:
+
+- Set `NEXT_PUBLIC_API_URL` to your Laravel application URL (default: http://localhost:8000/api)
+
+Run the Next.js development server:
 
 ```bash
 npm run dev
