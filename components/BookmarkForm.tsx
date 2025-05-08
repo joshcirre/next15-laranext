@@ -117,7 +117,7 @@ export function BookmarkForm() {
 
           <div className="space-y-2">
             <label htmlFor="title" className="text-sm font-medium">
-              Bookmark Title <span className="text-gray-500 text-xs">(optional)</span>
+              Bookmark Title
             </label>
             <Input
               id="title"

@@ -18,7 +18,8 @@ export async function generateToken() {
   const data = await response.json();
 
   if (data.token) {
-    cookies().set("apiToken", data.token, {
+    const cookieStore = await cookies();
+    cookieStore.set("apiToken", data.token, {
       httpOnly: true,
       path: "/",
       maxAge: 60 * 60 * 24 * 30, // 30 days
